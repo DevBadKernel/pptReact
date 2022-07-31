@@ -1,0 +1,11 @@
+#seleccion {
+    display: flex;
+    flex-direction: column;
+}
+
+#botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}

@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import Boton from '../Boton';
+import Seleccion from '../Seleccion';
 import './style.css';
 
 export default class Ppt extends Component {
@@ -13,14 +15,11 @@ export default class Ppt extends Component {
         
         return (
             <div id="ppt">
-                {/* <h1>Vamos a jugar a un juego</h1> */}
-                <div id=''>
-                    
+                <div id='juego'>
+                    <Seleccion />
+                    <Boton />
+                    <Seleccion />
                 </div>
-                <div id=''>
-                    
-                </div>
-                
             </div>
         )
     }

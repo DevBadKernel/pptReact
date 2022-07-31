@@ -1,0 +1,14 @@
+#ppt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkslategray;
+    width: 100vw;
+    height: 100vh;
+}
+
+#juego{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
