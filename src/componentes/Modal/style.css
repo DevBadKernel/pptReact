@@ -1,0 +1,23 @@
+#modal{
+    position: absolute;
+    background-color: rgba(72, 71, 71, 0.9);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#reset{
+    height: 120px;
+    width: 250px;
+    border: solid 2px black;
+    background-color: blueviolet;
+    border-radius: 10px;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}

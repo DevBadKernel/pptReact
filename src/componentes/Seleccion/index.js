@@ -5,7 +5,7 @@ import Papel from '../../images/papel.png'
 import Tijeras from '../../images/tijeras.png'
 import Boton from '../Boton';
 
-const Seleccion = ({jugador, handleNext, handlePrev}) => {
+const Seleccion = ({jugador, handleNext, handlePrev, seleccion, ganadas}) => {
     
     let nextOption = () => {
         handleNext(jugador)
@@ -17,11 +17,16 @@ const Seleccion = ({jugador, handleNext, handlePrev}) => {
 
     return (
         <div id='seleccion'>
-            <img src={Piedra}></img>
+            {seleccion === 'piedra' && <img src={Piedra}/>}
+            {seleccion === 'papel' && <img src={Papel}/>}
+            {seleccion === 'tijeras' && <img src={Tijeras}/>}
             <div id='botones'>
                 <Boton content='<' handleClick={nextOption}/>
-                <div id='opcion'>Prueba</div>
+                <div id='opcion'>{seleccion}</div>
                 <Boton content='>' handleClick={prevOption}/>
+            </div>
+            <div>
+                {ganadas}
             </div>
         </div>
     )

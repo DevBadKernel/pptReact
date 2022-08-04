@@ -1,10 +1,10 @@
 import React from 'react'
 import Boton from '../Boton'
 
-const Jugar = () => {
+const Jugar = ({jugada}) => {
     return (
         <div>
-            <Boton content='Jugar'/>
+            <Boton content='Jugar' handleClick={jugada}/>
         </div>
     )
 }

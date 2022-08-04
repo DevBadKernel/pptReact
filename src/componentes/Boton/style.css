@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 100px;
+    height: 70px;
+    width: 150px;
     border: solid 2px black;
     background-color: blueviolet;
     border-radius: 10px;
+    font-weight: bolder;
 }
