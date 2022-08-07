@@ -77,7 +77,7 @@ export default class Ppt extends Component {
             <div id="ppt">
                 <div id='juego'>
                     <Seleccion handleNext={this.handleNext} handlePrev={this.handlePrev} jugador={1} seleccion={this.state.seleccion1} ganadas={this.state.ganadas1}/>
-                    <Jugar jugada={this.jugada}/>
+                    <div id='jugada'><Jugar jugada={this.jugada}/></div>
                     <Seleccion handleNext={this.handleNext} handlePrev={this.handlePrev} jugador={2} seleccion={this.state.seleccion2} ganadas={this.state.ganadas2} />
                 </div>
                 <Modal ganador={this.state.ganador} handleReset={this.handleReset}/>
